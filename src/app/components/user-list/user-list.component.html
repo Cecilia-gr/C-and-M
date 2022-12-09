@@ -1,0 +1,2 @@
+<app-user *ngFor="let user of userservice.users; trackBy:trackByFunction" [user]="user"></app-user>
+<p>{{userservice.users.length}}</p>

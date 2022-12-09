@@ -1,1 +1,8 @@
-<p>user works!</p>
+<div class="card">
+    <div class="card-body">
+        <h2>{{user.firstName}} {{user.lastName}}</h2>
+       <p *ngIf="user.email != '' ">{{ user.email}}</p>
+       <p *ngIf="user.adresse != '' ">{{user.adresse}}</p>
+       <p *ngIf="(user.cp != '') && (user.ville != '') && (user.pays != '') ">{{user.cp}}, {{user.ville}}, {{user.pays}}</p>
+    </div>
+  </div>
