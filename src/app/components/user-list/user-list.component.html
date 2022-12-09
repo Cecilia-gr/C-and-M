@@ -1,2 +1,9 @@
-<app-user *ngFor="let user of userservice.users; trackBy:trackByFunction" [user]="user"></app-user>
 <p>{{userservice.users.length}}</p>
+
+<div class="card" *ngFor="let user of userservice.users; trackBy:trackByFunction">
+    <div class="card-body">
+        <app-user [user]="user"></app-user>
+    </div>
+</div>
+
+<button type="button" class="btn btn-primary">Primary</button>
