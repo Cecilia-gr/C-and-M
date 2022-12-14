@@ -13,6 +13,7 @@ import { NavComponent } from './components/nav/nav.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { CategoriesComponent } from './components/categories/categories.component';
 import { FormulairConnexionComponent } from './components/formulair-connexion/formulair-connexion.component';
+import { HomeComponent } from './components/home/home.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { FormulairConnexionComponent } from './components/formulair-connexion/fo
     NavComponent,
     ContactComponent,
     CategoriesComponent,
-    FormulairConnexionComponent
+    FormulairConnexionComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,

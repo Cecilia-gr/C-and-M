@@ -2,12 +2,17 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { ContactComponent } from './components/contact/contact.component';
 import { FormulairConnexionComponent } from './components/formulair-connexion/formulair-connexion.component';
+import { HomeComponent } from './components/home/home.component';
 import { NotfoundComponent } from './components/notfound/notfound.component';
 import { RegisterComponent } from './components/register/register.component';
 import { UserListComponent } from './components/user-list/user-list.component';
 import { AuthGuard } from './guards/auth.guard';
 
 const routes: Routes = [
+  {path: 'home', component: HomeComponent },
+  {path: '', component: HomeComponent},
+
+
   {
     path: '',
     canActivate: [AuthGuard],
