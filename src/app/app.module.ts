@@ -9,10 +9,7 @@ import { UserListComponent } from './components/user-list/user-list.component';
 import { UserFormComponent } from './components/user-form/user-form.component';
 import { NotfoundComponent } from './components/notfound/notfound.component';
 import { RegisterComponent } from './components/register/register.component';
-import { ListComponent } from './components/list/list.component';
 import { NavComponent } from './components/nav/nav.component';
-import { List2Component } from './components/list2/list2.component';
-import { RegisterformComponent } from './components/registerform/registerform.component';
 import { ItemComponent } from './components/item/item.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { CategoriesComponent } from './components/categories/categories.component';
@@ -26,10 +23,7 @@ import { CategoriesComponent } from './components/categories/categories.componen
     UserFormComponent,
     NotfoundComponent,
     RegisterComponent,
-    ListComponent,
     NavComponent,
-    List2Component,
-    RegisterformComponent,
     ItemComponent,
     ContactComponent,
     CategoriesComponent
