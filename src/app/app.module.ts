@@ -9,6 +9,7 @@ import { UserListComponent } from './components/user-list/user-list.component';
 import { NavComponent } from './components/nav/nav.component';
 import { UserFormComponent } from './components/user-form/user-form.component';
 import { NotfoundComponent } from './components/notfound/notfound.component';
+import { RegisterComponent } from './components/register/register.component';
 
 
 @NgModule({
@@ -18,7 +19,8 @@ import { NotfoundComponent } from './components/notfound/notfound.component';
     UserListComponent,
     NavComponent,
     UserFormComponent,
-    NotfoundComponent
+    NotfoundComponent,
+    RegisterComponent
   ],
   imports: [
     BrowserModule,

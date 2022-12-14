@@ -1,0 +1,23 @@
+<form [formGroup]="registerForm">
+    <div class="mb-3">
+
+        <label for="" class="form-label">Prenom</label>
+        <input type="text" formControlName="firstName" class="form-control" required>
+
+        <label for="" class="form-label">Nom</label>
+        <input type="text" formControlName="lastName" class="form-control" required>
+
+        <label for="" class="form-label">Email</label>
+        <input type="email" formControlName="email" class="form-control" required>
+
+        <label for="" class="form-label">Mot de passe </label>
+        <input type="password" formControlName="password" class="form-control" required>
+
+        <label for="" class="form-label">Vérification du mot de passe</label>
+        <input type="password" formControlName="verifPassword" class="form-control" required>
+
+        <button (click)="onSumit(registerForm)" type="submit" [disabled]="!registerForm.valid"
+            class="btn btn-primary">Valider</button>
+    </div>
+
+</form>
