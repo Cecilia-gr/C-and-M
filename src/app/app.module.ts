@@ -6,13 +6,17 @@ import { AppComponent } from './app.component';
 import { ListComponent } from './components/list/list.component';
 import { NavComponent } from './components/nav/nav.component';
 import { List2Component } from './components/list2/list2.component';
+import { RegisterformComponent } from './registerform/registerform.component';
+import { ItemComponent } from './item/item.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ListComponent,
     NavComponent,
-    List2Component
+    List2Component,
+    RegisterformComponent,
+    ItemComponent
   ],
   imports: [
     BrowserModule,
