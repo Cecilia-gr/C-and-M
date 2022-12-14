@@ -9,6 +9,8 @@ import { List2Component } from './components/list2/list2.component';
 import { RegisterformComponent } from './registerform/registerform.component';
 import { ItemComponent } from './item/item.component';
 import { FormulairConnexionComponent } from './formulair-connexion/formulair-connexion.component';
+import { ModpasseComponent } from './modpasse/modpasse.component';
+import { MotpasseObComponent } from './motpasse-ob/motpasse-ob.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,9 @@ import { FormulairConnexionComponent } from './formulair-connexion/formulair-con
     List2Component,
     RegisterformComponent,
     ItemComponent,
-    FormulairConnexionComponent
+    FormulairConnexionComponent,
+    ModpasseComponent,
+    MotpasseObComponent
   ],
   imports: [
     BrowserModule,
