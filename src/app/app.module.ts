@@ -14,6 +14,8 @@ import { NavComponent } from './components/nav/nav.component';
 import { List2Component } from './components/list2/list2.component';
 import { RegisterformComponent } from './components/registerform/registerform.component';
 import { ItemComponent } from './components/item/item.component';
+import { ContactComponent } from './components/contact/contact.component';
+import { CategoriesComponent } from './components/categories/categories.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +30,9 @@ import { ItemComponent } from './components/item/item.component';
     NavComponent,
     List2Component,
     RegisterformComponent,
-    ItemComponent
+    ItemComponent,
+    ContactComponent,
+    CategoriesComponent
   ],
   imports: [
     BrowserModule,
