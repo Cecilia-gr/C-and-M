@@ -13,6 +13,10 @@ import { NavComponent } from './components/nav/nav.component';
 import { ItemComponent } from './components/item/item.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { CategoriesComponent } from './components/categories/categories.component';
+import { List2Component } from './components/list2/list2.component';
+import { RegisterformComponent } from './registerform/registerform.component';
+import { ItemComponent } from './item/item.component';
+import { FormulairConnexionComponent } from './formulair-connexion/formulair-connexion.component';
 
 @NgModule({
   declarations: [
@@ -27,6 +31,10 @@ import { CategoriesComponent } from './components/categories/categories.componen
     ItemComponent,
     ContactComponent,
     CategoriesComponent
+    List2Component,
+    RegisterformComponent,
+    ItemComponent,
+    FormulairConnexionComponent
   ],
   imports: [
     BrowserModule,

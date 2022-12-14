@@ -1,0 +1,39 @@
+#cm1 {
+  color: white;
+  background-color: #111111;
+  padding: 18px;
+  text-align: right;
+}
+
+input[type="text"],
+select {
+  width: 100%;
+  padding: 20px 20px;
+  margin: 20px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 15px;
+  box-sizing: border-box;
+  background-color: #040604;
+}
+
+input[type="submit"] {
+  width: 100%;
+  background-color: #676a67;
+  color: rgb(28, 26, 26);
+  padding: 20px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #040604;
+}
+
+div {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
