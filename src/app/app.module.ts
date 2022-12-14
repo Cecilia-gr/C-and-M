@@ -8,6 +8,7 @@ import { NavComponent } from './components/nav/nav.component';
 import { List2Component } from './components/list2/list2.component';
 import { RegisterformComponent } from './registerform/registerform.component';
 import { ItemComponent } from './item/item.component';
+import { FormulairConnexionComponent } from './formulair-connexion/formulair-connexion.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { ItemComponent } from './item/item.component';
     NavComponent,
     List2Component,
     RegisterformComponent,
-    ItemComponent
+    ItemComponent,
+    FormulairConnexionComponent
   ],
   imports: [
     BrowserModule,
