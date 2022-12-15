@@ -1,0 +1,3 @@
+<h2>{{user.firstName}} {{user.lastName}}</h2>
+<p *ngIf="user.email != '' ">{{ user.email}}</p>
+<p *ngIf="user.adresseComplete.adresse != '' ">{{user.adresseComplete.adresse}} {{user.adresseComplete.cp}}, {{user.adresseComplete.ville}}, {{user.adresseComplete.pays}}</p>
