@@ -14,6 +14,7 @@ import { ContactComponent } from './components/contact/contact.component';
 import { CategoriesComponent } from './components/categories/categories.component';
 import { FormulairConnexionComponent } from './components/formulair-connexion/formulair-connexion.component';
 import { HomeComponent } from './components/home/home.component';
+import { ItemComponent } from './components/item/item.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { HomeComponent } from './components/home/home.component';
     ContactComponent,
     CategoriesComponent,
     FormulairConnexionComponent,
-    HomeComponent
+    HomeComponent,
+    ItemComponent
   ],
   imports: [
     BrowserModule,

@@ -9,8 +9,8 @@ import { UserListComponent } from './components/user-list/user-list.component';
 import { AuthGuard } from './guards/auth.guard';
 
 const routes: Routes = [
-  {path: 'home', component: HomeComponent },
-  {path: '', component: HomeComponent},
+  // {path: 'home', component: HomeComponent },
+  {path: '', component: HomeComponent, pathMatch: 'full'},
 
 
   {
