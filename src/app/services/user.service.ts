@@ -3,8 +3,8 @@ import { BehaviorSubject, Observable } from 'rxjs';
 import { User } from '../class/user.model';
 
 const initialList : User[] = [
-  new User("m.dubois@mail.com","test" ,"Marie", "Dubois", "1, Av de Frane" , "75013", "Paris", "france", "06 00 00 00 00" ),
-  new User("m.jeanne@mail.com","test" ,"Marie", "Jeanne",)
+  new User("m.dubois@mail.com","test" ,"Marie", "Dubois", "1, Av de Frane" , "75013", "Paris", "france", "06 00 00 00 00", "admin" ),
+  new User("m.jeanne@mail.com","test" ,"Marie", "Jeanne")
 
 ];
 

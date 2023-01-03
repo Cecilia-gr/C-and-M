@@ -10,7 +10,7 @@ import { UserService } from 'src/app/services/user.service';
 export class UserComponent {
   @Input() user! : User;
 
-  constructor(private us : UserService){
+  constructor(private userService : UserService){
     // this.user;
   }
 

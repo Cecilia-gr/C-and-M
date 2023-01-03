@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { CartComponent } from './components/cart/cart.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { FormulairConnexionComponent } from './components/formulair-connexion/formulair-connexion.component';
 import { HomeComponent } from './components/home/home.component';
@@ -24,6 +25,7 @@ const routes: Routes = [
   {path: 'inscription', component: RegisterComponent, pathMatch: "full" },
   {path: 'user-list', component: UserListComponent, pathMatch: "full" },
   {path: 'add-item', component: ItemFormComponent},
+  {path: 'cart', component: CartComponent},
   {path: 'contact', component: ContactComponent},
   {path: 'connexion', component: FormulairConnexionComponent},
   { path: '404', component: NotfoundComponent },

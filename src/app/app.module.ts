@@ -16,6 +16,8 @@ import { FormulairConnexionComponent } from './components/formulair-connexion/fo
 import { HomeComponent } from './components/home/home.component';
 import { ItemComponent } from './components/item/item.component';
 import { ItemFormComponent } from './components/item-form/item-form.component';
+import { CartComponent } from './components/cart/cart.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -32,13 +34,15 @@ import { ItemFormComponent } from './components/item-form/item-form.component';
     FormulairConnexionComponent,
     HomeComponent,
     ItemComponent,
-    ItemFormComponent
+    ItemFormComponent,
+    CartComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
