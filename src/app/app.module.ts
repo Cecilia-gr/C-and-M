@@ -15,6 +15,7 @@ import { CategoriesComponent } from './components/categories/categories.componen
 import { FormulairConnexionComponent } from './components/formulair-connexion/formulair-connexion.component';
 import { HomeComponent } from './components/home/home.component';
 import { ItemComponent } from './components/item/item.component';
+import { ItemFormComponent } from './components/item-form/item-form.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { ItemComponent } from './components/item/item.component';
     CategoriesComponent,
     FormulairConnexionComponent,
     HomeComponent,
-    ItemComponent
+    ItemComponent,
+    ItemFormComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,23 @@
+<form [formGroup]="itemForm">
+    <div class="mb-3">
+
+        <label for="" class="form-label">Nom</label>
+        <input type="text" formControlName="nom" class="form-control" required>
+
+        <label for="" class="form-label">Description</label>
+        <input type="text" formControlName="description" class="form-control" required>
+
+        <label for="" class="form-label">Photo</label>
+        <input type="text" formControlName="photo" class="form-control" required>
+
+        <label for="" class="form-label">Stock</label>
+        <input type="number" formControlName="stock" class="form-control" required>
+
+        <label for="" class="form-label">Prix</label>
+        <input type="number" formControlName="prix" class="form-control" required>
+
+        <button (click)="onSumit(itemForm)" type="submit" [disabled]="!itemForm.valid"
+            class="btn btn-primary">Valider</button>
+    </div>
+
+</form>

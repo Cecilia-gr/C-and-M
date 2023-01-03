@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { ContactComponent } from './components/contact/contact.component';
 import { FormulairConnexionComponent } from './components/formulair-connexion/formulair-connexion.component';
 import { HomeComponent } from './components/home/home.component';
+import { ItemFormComponent } from './components/item-form/item-form.component';
 import { NotfoundComponent } from './components/notfound/notfound.component';
 import { RegisterComponent } from './components/register/register.component';
 import { UserListComponent } from './components/user-list/user-list.component';
@@ -22,6 +23,7 @@ const routes: Routes = [
   },
   {path: 'inscription', component: RegisterComponent, pathMatch: "full" },
   {path: 'user-list', component: UserListComponent, pathMatch: "full" },
+  {path: 'add-item', component: ItemFormComponent},
   {path: 'contact', component: ContactComponent},
   {path: 'connexion', component: FormulairConnexionComponent},
   { path: '404', component: NotfoundComponent },
