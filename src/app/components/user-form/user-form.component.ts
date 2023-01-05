@@ -54,7 +54,7 @@ export class UserFormComponent {
 
   }
 
-  onSumit(userForm: FormGroup): void {
+  onSubmit(userForm: FormGroup): void {
     this.userservice.addUser(new User(userForm.value.email, userForm.value.password, userForm.value.firstName, userForm.value.lastName, userForm.value.adresse, userForm.value.cp, userForm.value.ville, userForm.value.pays, userForm.value.telephone));
     this.router.navigate(['user-list']);
   }

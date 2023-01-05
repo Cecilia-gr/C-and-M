@@ -17,8 +17,6 @@ export class ItemFormComponent {
   stock: FormControl;
   photo: FormControl;
 
-
-
   constructor(private fb: FormBuilder, private router: Router, private itemService: ItemService) {
     this.nom = this.fb.control('', [Validators.required, Validators.minLength(3)]);
     this.description = this.fb.control('', [Validators.required, Validators.minLength(3)]);
@@ -39,9 +37,10 @@ export class ItemFormComponent {
 
   }
 
-  onSumit(itemForm: FormGroup): void {
+  onSubmit(itemForm: FormGroup): void {
+    console.log(itemForm.value);
+    
     this.itemService.addItem(new Item( itemForm.value.nom, itemForm.value.description, itemForm.value.photo, itemForm.value.stock, itemForm.value.prix ));
     this.router.navigate(['']);
   }
-
 }

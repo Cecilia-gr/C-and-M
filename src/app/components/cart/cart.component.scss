@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.formeconten {
+    // position: absolute;
+    // top: 30%;
+    // left: 50%;
+    // transform: translate(-50%, -50%);
+    width: 350px;
+    margin: 10px auto ;
+
+}
+
+#cars {
+    font-size: 16px;
+    padding: 10px 10px;
+    // width: ;
+    margin: 17px 10px 0 15px;
+    border: 0;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+#panier {
+    font-size: 30px;
+    margin: 20px 0px;
+}
+
+button {
+    color: aliceblue;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 20px 10px;
+    margin: 100px 10px 0 15px;
+    width: 100%;
+    border: 0;
+    border-radius: 30px;
+    background-color: black;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.formeconten button:hover {
+    background-color: rgb(135, 129, 129);
+}
+
+#total {
+    font-size: 20px;
+    width: 100%;
+    padding: 20px 0px;
+    margin: 17px 10px 0 15px;
+    cursor: pointer;
+
+}
+
+.qté {
+    font-size: 20px;
+
+}
