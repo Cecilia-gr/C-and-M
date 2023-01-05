@@ -2,9 +2,8 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import {MatIconModule} from '@angular/material/icon';
-import {MatBadgeModule} from '@angular/material/badge';
-
+import { MatIconModule } from '@angular/material/icon';
+import { MatBadgeModule } from '@angular/material/badge';
 
 import { AppComponent } from './app.component';
 import { UserComponent } from './components/user/user.component';
@@ -34,11 +33,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     NavComponent,
     ContactComponent,
     CategoriesComponent,
-    FormulairConnexionComponent,
-    HomeComponent,
-    ItemComponent,
-    ItemFormComponent,
-    CartComponent
+    FormulairConnexionComponent
   ],
   imports: [
     BrowserModule,
@@ -47,9 +42,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     ReactiveFormsModule,
     BrowserAnimationsModule,
     MatIconModule,
-    MatBadgeModule
+    MatBadgeModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
