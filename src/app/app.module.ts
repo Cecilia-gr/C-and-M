@@ -30,6 +30,7 @@ import { provideAuth,getAuth } from '@angular/fire/auth';
 import { provideDatabase,getDatabase } from '@angular/fire/database';
 import { provideStorage,getStorage } from '@angular/fire/storage';
 import { LivraisonComponent } from './components/livraison/livraison.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -49,6 +50,7 @@ import { LivraisonComponent } from './components/livraison/livraison.component';
     ItemFormComponent,
     CartComponent,
     LivraisonComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,

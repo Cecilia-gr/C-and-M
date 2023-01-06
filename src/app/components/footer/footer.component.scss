@@ -1,0 +1,27 @@
+#barbas1 {
+
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: rgb(157, 138, 138);
+    margin: 24px 0;
+    padding: 12px;
+
+
+
+}
+
+
+#barbas1 li a {
+    text-decoration: none;
+    color: aliceblue;
+
+}
+
+
+#barbas1 li a img:hover {
+
+    transform: scale(1.4);
+
+}
