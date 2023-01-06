@@ -5,6 +5,7 @@ import { ContactComponent } from './components/contact/contact.component';
 import { FormulairConnexionComponent } from './components/formulair-connexion/formulair-connexion.component';
 import { HomeComponent } from './components/home/home.component';
 import { ItemFormComponent } from './components/item-form/item-form.component';
+import { LivraisonComponent } from './components/livraison/livraison.component';
 import { NotfoundComponent } from './components/notfound/notfound.component';
 import { PaiementComponent } from './components/paiement/paiement.component';
 import { RegisterComponent } from './components/register/register.component';
@@ -27,6 +28,7 @@ const routes: Routes = [
   {path: 'user-list', component: UserListComponent, pathMatch: "full" },
   {path: 'add-item', component: ItemFormComponent},
   {path: 'paiement', component: PaiementComponent},
+  {path: 'livraison', component: LivraisonComponent},
 
   {path: 'cart', component: CartComponent},
   {path: 'contact', component: ContactComponent},

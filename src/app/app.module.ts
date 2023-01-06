@@ -29,6 +29,7 @@ import { environment } from '../environments/environment';
 import { provideAuth,getAuth } from '@angular/fire/auth';
 import { provideDatabase,getDatabase } from '@angular/fire/database';
 import { provideStorage,getStorage } from '@angular/fire/storage';
+import { LivraisonComponent } from './components/livraison/livraison.component';
 
 @NgModule({
   declarations: [
@@ -47,6 +48,7 @@ import { provideStorage,getStorage } from '@angular/fire/storage';
     ItemComponent,
     ItemFormComponent,
     CartComponent,
+    LivraisonComponent,
   ],
   imports: [
     BrowserModule,
