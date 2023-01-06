@@ -6,6 +6,7 @@ import { FormulairConnexionComponent } from './components/formulair-connexion/fo
 import { HomeComponent } from './components/home/home.component';
 import { ItemFormComponent } from './components/item-form/item-form.component';
 import { NotfoundComponent } from './components/notfound/notfound.component';
+import { PaiementComponent } from './components/paiement/paiement.component';
 import { RegisterComponent } from './components/register/register.component';
 import { UserListComponent } from './components/user-list/user-list.component';
 import { AuthGuard } from './guards/auth.guard';
@@ -25,6 +26,8 @@ const routes: Routes = [
   {path: 'inscription', component: RegisterComponent, pathMatch: "full" },
   {path: 'user-list', component: UserListComponent, pathMatch: "full" },
   {path: 'add-item', component: ItemFormComponent},
+  {path: 'paiement', component: PaiementComponent},
+
   {path: 'cart', component: CartComponent},
   {path: 'contact', component: ContactComponent},
   {path: 'connexion', component: FormulairConnexionComponent},
