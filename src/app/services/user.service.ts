@@ -1,3 +1,4 @@
+import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { BehaviorSubject, Observable } from 'rxjs';
 import { User } from '../class/user.model';
@@ -7,6 +8,8 @@ const initialList : User[] = [
   new User("m.jeanne@mail.com","test" ,"Marie", "Jeanne")
 
 ];
+
+const url = "https://databasecm-d26a6-default-rtdb.europe-west1.firebasedatabase.app/";
 
 
 @Injectable({
@@ -19,7 +22,7 @@ export class UserService {
   public prom!: Promise<string>;
 
 
-  constructor() {
+  constructor( public http:HttpClient) {
     this.users = [];
     this._user = new BehaviorSubject<User[]>(this.users);
     this.user$ = this._user.asObservable();
@@ -39,6 +42,28 @@ export class UserService {
   addUser(user: User) :void{
     this.users.push(user);
     this.emiter(this.users);
+
+    this.save();
   }
+
+  save () {
+    console.log(this.users);
+    this.http.put( url +'/users.json', this.users)
+    .subscribe();
+  }
+
+  load () {
+    this.http.get(url+'/users.json')
+    .subscribe((response : any) => {
+      this._user.next(Object.assign(this.users, response))
+    });
+
+  }
+
+  getUsers(): Observable<User[]> {
+    return this.user$;
+  }
+
+
 
 }

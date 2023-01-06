@@ -9,11 +9,11 @@ import { UserService } from 'src/app/services/user.service';
   styleUrls: ['./user-list.component.scss']
 })
 export class UserListComponent {
-  public users : User[] = [];
-  private user$! : Observable<User[]>;
-  public subscribe! : Subscription |undefined;
+  public users: User[] = [];
+  private user$!: Observable<User[]>;
+  public subscribe!: Subscription | undefined;
 
-  constructor(public userservice: UserService) {
+  constructor(public userService: UserService) {
   }
 
   trackByFunction
@@ -22,13 +22,21 @@ export class UserListComponent {
   }
 
   ngOnInit() {
-    this.subscribe = this.user$.subscribe(user =>{this.users = user});
+    this.user$ = this.userService.getUsers();
+    this.getUsers();
+    this.userService.load();
   }
 
   ngOnDestroy(): void {
     this.subscribe?.unsubscribe();
   }
 
+  getUsers(): void {
+    this.subscribe = this.user$.subscribe(users => {
+      this.users = users
+    })
+  }
 
 
 }
+
