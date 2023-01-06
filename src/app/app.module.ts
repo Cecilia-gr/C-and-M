@@ -31,6 +31,7 @@ import { provideDatabase,getDatabase } from '@angular/fire/database';
 import { provideStorage,getStorage } from '@angular/fire/storage';
 import { LivraisonComponent } from './components/livraison/livraison.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { ItemListComponent } from './components/item-list/item-list.component';
 
 @NgModule({
   declarations: [
@@ -51,6 +52,7 @@ import { FooterComponent } from './components/footer/footer.component';
     CartComponent,
     LivraisonComponent,
     FooterComponent,
+    ItemListComponent,
   ],
   imports: [
     BrowserModule,
