@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "databasecm-d26a6"
+  },
+  "targets": {
+    "databasecm-d26a6": {
+      "hosting": {
+        "c-and-m": [
+          "databasecm-d26a6"
+        ]
+      }
+    }
+  }
+}
